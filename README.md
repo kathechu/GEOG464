@@ -1,5 +1,5 @@
 # Pollution Site Proximity and Socioeconomic Class in Philadelphia
-### GEOG464: Advanced Spatial Analysis in Stata and ArcGIS Pro
+### GEOG 464: Advanced Spatial Analysis in Stata and ArcGIS Pro
 ### Spring 2024
 
 ## About
@@ -11,3 +11,5 @@ Environmental justice concerns the relation between unhealthy environmental spac
 * We can determine ways to better serve disenfranchised communities and keep in mind environmental equity in future redevelopments of polluted sites.
 
 Statistical analyses done via Stata. Code and data are provided in this repository. Chloropleth maps of significant findings are made in ArcGIS Pro. The maps can be seen in the poster attached in the repository.
+
+## [Dr. Louisa Holmes](https://www.geog.psu.edu/directory/louisa-m-holmes), for her guidance as the GEOG 464 professor.
