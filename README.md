@@ -12,4 +12,5 @@ Environmental justice concerns the relation between unhealthy environmental spac
 
 Statistical analyses done via Stata. Code and data are provided in this repository. Chloropleth maps of significant findings are made in ArcGIS Pro. The maps can be seen in the poster attached in the repository.
 
-## [Dr. Louisa Holmes](https://www.geog.psu.edu/directory/louisa-m-holmes), for her guidance as the GEOG 464 professor.
+## Acknowledgements
+* [Dr. Louisa Holmes](https://www.geog.psu.edu/directory/louisa-m-holmes), for her guidance as the GEOG 464 professor.
