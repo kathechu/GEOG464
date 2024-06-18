@@ -1,5 +1,5 @@
 # Pollution Site Proximity and Socioeconomic Class in Philadelphia
-## GEOG464: Advanced Spatial Analysis in Stata and ArcGIS Pro
+### GEOG464: Advanced Spatial Analysis in Stata and ArcGIS Pro
 ### Spring 2024
 
 ## About
