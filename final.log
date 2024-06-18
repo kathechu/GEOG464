@@ -1,0 +1,174 @@
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+      name:  <unnamed>
+       log:  D:\GEOG464\Final\final.log
+  log type:  text
+ opened on:  25 Apr 2024, 15:53:03
+
+. 
+. cd "D:\GEOG464\Final"
+D:\GEOG464\Final
+
+. 
+. * Review data set
+. 
+. use ej_screen2.dta                                      /* for this command to work as is, this data file has to be stored in the folder you pointed to above i
+> n the "cd" command line */
+
+. 
+end of do-file
+
+. do "C:\Users\kathe\AppData\Local\Temp\STD6b00_000000.tmp"
+
+. bysort id: assert _N==1         /* The numeric variable in the data set called 'county_id' uniquely identifies each row (county) */
+
+. assert id!=.                            /* The unique id - 'county_id' - does not have any missing values       */
+
+. 
+. spset id, modify replace        /* Set the data set as spatial data w/county_id as the geographic identifier */
+data not spset
+r(459);
+
+end of do-file
+
+r(459);
+
+. do "C:\Users\kathe\AppData\Local\Temp\STD6b00_000000.tmp"
+
+. bysort id: assert _N==1         /* The numeric variable in the data set called 'county_id' uniquely identifies each row (county) */
+
+. assert id!=.                            /* The unique id - 'county_id' - does not have any missing values       */
+
+. 
+end of do-file
+
+. do "C:\Users\kathe\AppData\Local\Temp\STD6b00_000000.tmp"
+
+. spset id, modify replace        /* Set the data set as spatial data w/county_id as the geographic identifier */
+data not spset
+r(459);
+
+end of do-file
+
+r(459);
+
+. do "C:\Users\kathe\AppData\Local\Temp\STD6b00_000000.tmp"
+
+. spset id
+
+      Sp dataset: ej_screen2.dta
+Linked shapefile: <none>
+            Data: Cross sectional
+ Spatial-unit ID: _ID (equal to id)
+     Coordinates: <none>
+
+. 
+end of do-file
+
+. do "C:\Users\kathe\AppData\Local\Temp\STD6b00_000000.tmp"
+
+. *****************************************************************************************; 
+. *  AUTHOR:      Katherine Chu                                                                                                                   *;
+. *  CODE:                E:\GEOG464\Final\final.do                                                                                               *;             
+>            
+. *  DATA:        E:\GEOG464\Final\ej_screen.dta                                                                                  *;                             
+>          
+. *  PURPOSE:     Final                                                                                                                                   *;
+. *****************************************************************************************;
+. 
+. *Setup
+. 
+. log using "D:\GEOG464\Final\final.log", replace
+log file already open
+r(604);
+
+end of do-file
+
+r(604);
+
+. do "C:\Users\kathe\AppData\Local\Temp\STD6b00_000000.tmp"
+
+. spset id
+data already spset
+    Use spset, clear first or use spset, modify.
+r(459);
+
+end of do-file
+
+r(459);
+
+. do "C:\Users\kathe\AppData\Local\Temp\STD6b00_000000.tmp"
+
+. spset id, modify replace        /* Set the data set as spatial data w/county_id as the geographic identifier */
+option replace not allowed
+    The data in memory are not linked to a _shp.dta file that would need to be reindexed.  You can change the contents of variable _ID freely.  It is your
+    responsibility to resave the dataset if you want to make the change permanent.
+r(198);
+
+end of do-file
+
+r(198);
+
+. do "C:\Users\kathe\AppData\Local\Temp\STD6b00_000000.tmp"
+
+. save, replace
+file ej_screen2.dta saved
+
+. 
+end of do-file
+
+. do "C:\Users\kathe\AppData\Local\Temp\STD6b00_000000.tmp"
+
+. spmatrix create contiguity W            /* Set contiguity weights matrix */
+Sp data not linked to shapefile
+    Type spset, modify filename(<filename>_shp.dta) to link a _shp.dta file to the dataset in memory.
+r(601);
+
+end of do-file
+
+r(601);
+
+. do "C:\Users\kathe\AppData\Local\Temp\STD6b00_000000.tmp"
+
+. spmatrix create contiguity W            /* Set contiguity weights matrix */
+Sp data not linked to shapefile
+    Type spset, modify filename(<filename>_shp.dta) to link a _shp.dta file to the dataset in memory.
+r(601);
+
+end of do-file
+
+r(601);
+
+. do "C:\Users\kathe\AppData\Local\Temp\STD6b00_000000.tmp"
+
+. spset modify replace    /* Set the data set as spatial data w/id as the geographic identifier */
+data already spset
+    Use spset, clear first or use spset, modify.
+r(459);
+
+end of do-file
+
+r(459);
+
+. do "C:\Users\kathe\AppData\Local\Temp\STD6b00_000000.tmp"
+
+. spset modify    /* Set the data set as spatial data w/id as the geographic identifier */
+data already spset
+    Use spset, clear first or use spset, modify.
+r(459);
+
+end of do-file
+
+r(459);
+
+. do "C:\Users\kathe\AppData\Local\Temp\STD6b00_000000.tmp"
+
+. spmatrix create contiguity W            /* Set contiguity weights matrix */
+Sp data not linked to shapefile
+    Type spset, modify filename(<filename>_shp.dta) to link a _shp.dta file to the dataset in memory.
+r(601);
+
+end of do-file
+
+r(601);
+
+. exit, clear
